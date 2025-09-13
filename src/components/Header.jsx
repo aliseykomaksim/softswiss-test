@@ -1,13 +1,11 @@
 import { useState } from "react";
 
 export default function Header() {
-
   const [open, setOpen] = useState(false);
 
   return (
     <header className={`header ${open ? "is-open" : ""}`}>
       <div className="header__container container">
-
         <div className="header__logo">
           <img src={`${import.meta.env.BASE_URL}logo.svg`} className="header__logo-image" />
         </div>
@@ -50,8 +48,8 @@ export default function Header() {
         aria-label="Mobile navigation"
       >
         <ul className="header__mobile-list">
-          <li><a href="/" onClick={() => setOpen(false)}>Home</a></li>
-          <li><a href="/products" onClick={() => setOpen(false)}>Products</a></li>
+          <li><a href="#" onClick={() => setOpen(false)}>Home</a></li>
+          <li><a href="#" onClick={() => setOpen(false)}>Products</a></li>
           <li>
             <button className="header__cart-btn" onClick={() => setOpen(false)}>
               <img src={`${import.meta.env.BASE_URL}cart.svg`} className="header__cart-icon" alt="" />

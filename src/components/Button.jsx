@@ -1,5 +1,5 @@
-export default function Button({filled, children}) {
+export default function Button({ filled, children }) {
   return (
-    <a className={`button ${filled ? "button-filled" : ""}`}>{children}</a>
+    <button className={`button ${filled ? "button-filled" : ""}`}>{children}</button>
   );
 };

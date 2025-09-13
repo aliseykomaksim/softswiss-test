@@ -22,11 +22,10 @@
 
 #root {
   min-height: 100vh;
-  min-width: 100vw;
+  min-width: 100%;
   color: white;
   font-family: "Lato", sans-serif;
   background: linear-gradient(180deg, #0D1E48, #304571);
-  --gap: 1rem;
 }
 
 .lato-regular {
@@ -46,7 +45,6 @@
   font-weight: 900;
   font-style: normal;
 }
-
 
 .container {
   width: 100%;
@@ -213,13 +211,14 @@
       padding: .5rem 0;
     }
   }
+
   &.is-open {
     & .header__mobile {
       opacity: 1;
       transform: translateY(0);
       pointer-events: auto;
     }
-    
+
     & .header__burger span:nth-child(1) {
       transform: translateY(7px) rotate(45deg);
     }
@@ -227,6 +226,7 @@
     & .header__burger span:nth-child(2) {
       opacity: 0;
     }
+
     & .header__burger span:nth-child(3) {
       transform: translateY(-7px) rotate(-45deg);
     }
@@ -410,9 +410,24 @@
     }
   }
 
+  &__label {
+    &-less {
+      display: none;
+    }
+  }
+
   &__content {
     font-size: 18px;
     opacity: 60%;
+  }
+
+  &[open] {
+    & .read-more__label-more {
+      display: none;
+    }
+    & .read-more__label-less {
+      display: inline;
+    }
   }
 }
 
