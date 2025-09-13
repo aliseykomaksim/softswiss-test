@@ -12,28 +12,28 @@ function App() {
       title: 'Move the borders of reality!',
       subtitle: 'Go on a space adventure – it’s possible with us!',
       button: { label: 'Learn more' },
-      image: '/public/background-1.jpg'
+      image: `${import.meta.env.BASE_URL}background-1.jpg`
     },
     {
       id: 2,
       title: 'Space is not \n just stars and planets',
       subtitle: 'Go on a space adventure',
       button: { label: 'Learn more' },
-      image: '/public/background-2.jpg'
+      image: `${import.meta.env.BASE_URL}background-2.jpg`
     },
     {
       id: 3,
       title: 'For those who dream of stars',
       subtitle: 'Our offer: make your dream come true',
       button: { label: 'Learn more' },
-      image: '/public/background-3.jpg'
+      image: `${import.meta.env.BASE_URL}background-3.jpg`
     },
     {
       id: 4,
       title: 'Fulfill your fantastic dreams',
       subtitle: 'Space has never been so close',
       button: { label: 'Learn more' },
-      image: '/public/background-4.jpg'
+      image: `${import.meta.env.BASE_URL}background-4.jpg`
     }
   ];
 
